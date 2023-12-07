@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POR FAVOR, DIGITE LOGIN E SENHA QUE ESTÃO DESCRITOS NO POST-IT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h2>POR FAVOR, DIGITE LOGIN E SENHA QUE ESTÃO DESCRITOS NO POST-IT</h2>
+        <form onsubmit="login(event)">
+            <div class="inputBox">
+                <input type="text" name="name" autocomplete="off" autofocus required>
+                <label for="name">Nome</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required>
+                <label for="password">Senha</label>
+            </div>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+
+            var usuario = document.getElementsByName('name')[0].value;
+            var senha = document.getElementsByName('password')[0].value;
+
+            // Adicione aqui a lógica de autenticação, por exemplo:
+            if (usuario === 'lucaslopes' && senha === '180623') {
+                window.location.href = 'paginasecreta.html';
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+        }
+    </script>
+</body>
+
+</html>

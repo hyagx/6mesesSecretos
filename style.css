@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('Estudio_de_plataforma_de_podio_de_produtos_de_alta_tecnologia_em_nave_espacial_escura_com_iluminacao_brilhante_fundo_de_luz_azul_neon._Palco_retro_de_alta_tecnologia_e_tema_futuro_de_ciencia_e_tecnologia..jpg');
+    background-repeat: no-repeat;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.5)
+    border-radius: 10px;
+}
+
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.box .inputBox {
+    position: relative;
+
+}
+
+.box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    margin-bottom: 36px;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    outline: none;
+    background-color: transparent;
+
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box .inputBox input:focus - label,
+.box .inputBox input:valid - label {
+    top: -10px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px
+}
+
+.box input[type="submit"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    background-color: #03a9f4;
+    padding: 10px 20px;
+    cursor: ponter;
+    border-radius: 5px;
+}
